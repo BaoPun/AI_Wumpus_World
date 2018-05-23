@@ -6,7 +6,7 @@ Wumpus World in the eyes of a basic AI
 
 Kill the wumpus, grab the gold bag, and then return to the starting position (order of wumpus hunting and gold grabbing doesn't matter)
 
-#Obstacles in Wumpus World
+# Obstacles in Wumpus World
 
 1 wumpus, 1 bag of gold, 2 pits, 2 bats.
 Wumpus is the creature we're trying to kill.
@@ -14,13 +14,13 @@ Bag of gold is what we want to grab
 Pit is a bottomless crevice that we do not want to fall into
 Bat is a swarm of winged creatures that will randomly place us in a different location within the maze.  Can even land on any events described above.
 
-#Moving Wumpus
+# Moving Wumpus
 
 Mark current area as visited, scan area around AI.  Any percepts should be flagged with its respective boolean variable.
 Determines the best move by usage of boolean logic (how many percepts are read, how safe is it to traverse through an unknown space)
 If there is a "tie", then randomly choose the best move. 
 
-#Killing Wumpus
+# Killing Wumpus
 
 Check rooms adjacent to player.  To determine if the AI can certainly kill the wumpus, do the following:
 1. Scan the adjacent rooms
@@ -32,7 +32,7 @@ Check rooms adjacent to player.  To determine if the AI can certainly kill the w
 4. If formula is true, and we detected a stench, then return true
 5. Else, return false.
 
-#End game
+# End game
 
 After killing wumpus and grabbing the gold, use manhattan distance to get optimal path from current location to start location
 Manhattan distance = |xstart - xcurrent| + |ystart - ycurrent|, where current = current location of player and start = starting location upon playing the game
