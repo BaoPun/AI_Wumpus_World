@@ -1,8 +1,10 @@
 # AI_Wumpus_World
 
 Wumpus World in the eyes of a basic AI
+Compiled using g++ -lncurses *.cpp (-o [exe name]), where () is optional.
+Used <ncurses.h> to get keyboard input. 
 
-#Objective
+# Objective
 
 Kill the wumpus, grab the gold bag, and then return to the starting position (order of wumpus hunting and gold grabbing doesn't matter)
 
